@@ -13,7 +13,7 @@ public class DBConnectionTest extends DBSetup {
     @Test
     public void dbTest() throws SQLException {
 
-        String query = "SELECT first_name, last_name FROM public.actor";
+        String query = "SELECT first_name FROM public.actor";
 
         Connection connect = setUp();
 
@@ -23,9 +23,9 @@ public class DBConnectionTest extends DBSetup {
 
         while (resultSet.next()) {
             String actual = resultSet.getString("first_name");
-            String act = resultSet.getString("last_name");
-            Assert.assertEquals(actual,"Penelope" ,act);
-            System.out.println(actual + " " + act);
+            //String act = resultSet.getString("last_name");
+            Assert.assertEquals(actual,"Penelope" );
+           // System.out.println(actual + " " + act);
             break;
 
         }
