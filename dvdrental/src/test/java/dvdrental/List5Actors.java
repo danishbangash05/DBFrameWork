@@ -30,12 +30,6 @@ public class List5Actors extends DBSetup {
         actors.add(4, "Johnny");
         for (int i = 0; i < actors.size(); i++) {
             while (resultSet.next()) {
-                //String actor_id = resultSet.getString("actor_id");
-//                String first_name = resultSet.getString("first_name");
-//
-                // String last_name = resultSet.getString("last_name");
-                //String last_update = resultSet.getString("last_update");
-                // System.out.println(actor_id + " " + first_name + " " + last_name + " " + last_update);
 
                 String actual = resultSet.getString("first_name");
                 String expected = actors.get(i);

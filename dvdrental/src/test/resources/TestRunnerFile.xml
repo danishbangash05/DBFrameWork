@@ -5,6 +5,10 @@
     <test name = "Ecommerce Home">
         <classes>
             <class name="dvdrental.DBConnectionTest"/>
+            <class name="dvdrental.DBC"/>
+            <class name="dvdrental.List5Actors"/>
+            <class name="dvdrental.DBConnection2"/>
+
         </classes>
     </test>
 
